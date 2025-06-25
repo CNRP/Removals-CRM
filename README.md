@@ -46,39 +46,27 @@ A complete business automation platform that handles the entire customer journey
 - Email threading and reply handling
 - Professional document attachment automation
 
-## 🛠️ Technical Highlights
+## 🖥️ System Screenshots
 
-### **Multi-Provider Webhook Security**
+### Dashboard Overview
 
-Implemented sophisticated signature validation supporting different providers with varying authentication methods. Solved critical production issue where CompareMymove's inconsistent JSON encoding was causing legitimate leads to be rejected.
+![Dashboard View](https://api.quickdigital.co.uk/storage/blog-content/8c26440a-c1c6-4b2a-bc64-7cdca3b9053d.jpg)
+_Real-time business dashboard with key metrics and workflow status_
 
-**Key Achievement:** Debugged and resolved double-escaping issue that was causing 15% lead loss.
+### Lead Management
 
-### **Service Facade Architecture**
+![Customer Leads Table](https://api.quickdigital.co.uk/storage/blog-content/718f6ce0-e05c-4881-a459-a0088bb518e5.png)
+_Advanced lead table with filtering, search, and bulk operations_
 
-Built comprehensive Google Services integration using Facade pattern, providing unified interface to Gmail, Calendar, and authentication APIs with intelligent fallback mechanisms.
+### Order Management
 
-### **Business Process Automation**
+![Order Details View](https://api.quickdigital.co.uk/storage/blog-content/1663efa5-96ae-431d-b288-1b3ff311b205.png)
+_Comprehensive order view with customer details and workflow management_
 
-Designed event-driven architecture where order status changes automatically trigger:
+### Document Generation
 
-- Google Calendar event creation/updates with rich details
-- Email automation based on customer lifecycle stage
-- Document generation with type-specific business rules
-- Customer follow-up scheduling
-
-### **Document Generation**
-
-Created sophisticated PDF generation system supporting multiple document types (quotes, invoices, deposits, receipts) with dynamic content, professional formatting, and business rule implementation.
-
-### **Modern Admin Interface with Filament**
-
-Built comprehensive business management interface featuring:
-
-- **Interactive calendar widget** with multi-day event visualization and status-based color coding
-- **Advanced order management** with complex filtering, bulk operations, and status workflow
-- **Integrated email composer** with template selection, live preview, and automatic PDF attachment
-- **PDF generator with live preview** showing real-time document formatting before generation
+![Invoice Generator with Preview](https://api.quickdigital.co.uk/storage/blog-content/26891ed0-4df1-4588-a2d1-9655a9c48ccd.jpg)
+_Live PDF preview system showing real-time document generation_
 
 ## 📁 Code Examples
 
@@ -113,28 +101,6 @@ Built comprehensive business management interface featuring:
 - [`BookingCalendarWidget.php`](examples/filament/widgets/BookingCalendarWidget.php) - Interactive calendar with multi-day event handling
 - [`EmailComposer.php`](examples/filament/components/EmailComposer.php) - Template-based email composition with PDF automation
 - [`PdfComposer.php`](examples/filament/components/PdfComposer.php) - Document generation with live preview
-
-## 🖥️ System Screenshots
-
-### Dashboard Overview
-
-![Dashboard View](https://api.quickdigital.co.uk/storage/blog-content/8c26440a-c1c6-4b2a-bc64-7cdca3b9053d.jpg)
-_Real-time business dashboard with key metrics and workflow status_
-
-### Lead Management
-
-![Customer Leads Table](https://api.quickdigital.co.uk/storage/blog-content/718f6ce0-e05c-4881-a459-a0088bb518e5.png)
-_Advanced lead table with filtering, search, and bulk operations_
-
-### Order Management
-
-![Order Details View](https://api.quickdigital.co.uk/storage/blog-content/1663efa5-96ae-431d-b288-1b3ff311b205.png)
-_Comprehensive order view with customer details and workflow management_
-
-### Document Generation
-
-![Invoice Generator with Preview](https://api.quickdigital.co.uk/storage/blog-content/26891ed0-4df1-4588-a2d1-9655a9c48ccd.jpg)
-_Live PDF preview system showing real-time document generation_
 
 ## 🏗️ Technical Stack
 
