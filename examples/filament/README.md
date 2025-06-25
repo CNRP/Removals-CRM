@@ -151,13 +151,6 @@ $this->previewData = [
 ];
 ```
 
-**Production Features:**
-
-- **Streamed downloads** for large documents
-- **Memory management** with temporary file handling
-- **Error recovery** with detailed logging
-- **Type validation** ensuring proper document generation
-
 ## Design Patterns Demonstrated
 
 ### Component Architecture

@@ -67,7 +67,7 @@ Designed event-driven architecture where order status changes automatically trig
 - Document generation with type-specific business rules
 - Customer follow-up scheduling
 
-### **Document Generation Engine**
+### **Document Generation**
 
 Created sophisticated PDF generation system supporting multiple document types (quotes, invoices, deposits, receipts) with dynamic content, professional formatting, and business rule implementation.
 
@@ -92,7 +92,15 @@ Built comprehensive business management interface featuring:
 - [`GoogleServicesFacade.php`](examples/services/GoogleServicesFacade.php) - Facade pattern for API integration
 - [`PDFGenerator.php`](examples/services/PDFGenerator.php) - Document automation with business rules
 - [`TemplateCompilerService.php`](examples/services/TemplateCompilerService.php) - Dynamic email content generation
-- [`GoogleCalendarService.php`](examples/services/GoogleCalendarService.php) - Automated calendar integration
+
+### [**Commands & Jobs**](examples/commands/) - Automated Processing
+
+- [`FetchEmails.php`](examples/commands/FetchEmails.php) - Scheduled Gmail synchronization with error handling
+- [`ProcessWebhook.php`](examples/jobs/ProcessWebhook.php) - Asynchronous webhook processing pipeline
+
+### [**Data Seeding**](examples/seeders/) - Business Template Management
+
+- [`TemplateSeeder.php`](examples/seeders/TemplateSeeder.php) - Professional email template library with dynamic placeholders
 
 ### [**Webhook Integration**](examples/webhook/) - External System Integration
 
@@ -100,30 +108,33 @@ Built comprehensive business management interface featuring:
 
 ### [**Filament Admin Interface**](examples/filament/) - Modern Business Management
 
+- [`README.md`](examples/filament/README.md) - Comprehensive documentation of Filament components and patterns
 - [`OrderResource.php`](examples/filament/resources/OrderResource.php) - Advanced order management with filtering & bulk operations
 - [`BookingCalendarWidget.php`](examples/filament/widgets/BookingCalendarWidget.php) - Interactive calendar with multi-day event handling
 - [`EmailComposer.php`](examples/filament/components/EmailComposer.php) - Template-based email composition with PDF automation
 - [`PdfComposer.php`](examples/filament/components/PdfComposer.php) - Document generation with live preview
 
-## 🔍 Key Problem Solved
+## 🖥️ System Screenshots
 
-### Webhook Signature Validation Failure
+### Dashboard Overview
 
-**Problem:** CompareMymove webhooks were failing signature validation intermittently, causing legitimate leads worth thousands of pounds to be rejected.
+![Dashboard View](https://api.quickdigital.co.uk/storage/blog-content/8c26440a-c1c6-4b2a-bc64-7cdca3b9053d.jpg)
+_Real-time business dashboard with key metrics and workflow status_
 
-**Investigation:** Implemented systematic debugging with payload analysis and discovered JSON encoding inconsistencies - sometimes properly formatted, sometimes double-escaped.
+### Lead Management
 
-**Solution:** Built payload normalization that handles encoding variations while maintaining cryptographic integrity.
+![Customer Leads Table](https://api.quickdigital.co.uk/storage/blog-content/718f6ce0-e05d-4881-a459-a0088bb518e5.png)
+_Advanced lead table with filtering, search, and bulk operations_
 
-**Result:** 100% reliable lead capture, zero false rejections.
+### Order Management
 
-[**→ Read the full debugging case study**](case-studies/webhook-debugging-solution.md)
+![Order Details View](https://api.quickdigital.co.uk/storage/blog-content/1663efa5-96ae-431d-b288-1b3ff311b205.png)
+_Comprehensive order view with customer details and workflow management_
 
-## 📈 System Architecture
+### Document Generation
 
-The system implements enterprise-level patterns including event-driven architecture, service facades, and comprehensive error handling. Built for scalability and reliability with production-grade logging, monitoring, and fallback mechanisms.
-
-[**→ View detailed architecture documentation**](docs/architecture.md)
+![Invoice Generator with Preview](https://api.quickdigital.co.uk/storage/blog-content/26891ed0-4df1-4588-a2d1-9655a9c48ccd.jpg)
+_Live PDF preview system showing real-time document generation_
 
 ## 🏗️ Technical Stack
 
@@ -132,14 +143,6 @@ The system implements enterprise-level patterns including event-driven architect
 - **Database:** MySQL with optimized indexing and relationship design
 - **Integrations:** Google APIs (Gmail, Calendar), webhook providers, PDF generation
 - **Infrastructure:** Queue processing, caching, comprehensive logging
-
-## 💼 Professional Experience Demonstrated
-
-- **Full-stack development** from database design to user interface
-- **Business process analysis** and workflow automation
-- **Third-party API integration** with robust error handling
-- **Production debugging** of complex encoding/signature issues
-- **System architecture** design for scalability and maintainability
 
 ## 📞 Business Context
 
