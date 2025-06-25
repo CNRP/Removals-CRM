@@ -110,15 +110,6 @@ _Live PDF preview system showing real-time document generation_
 - **Integrations:** Google APIs (Gmail, Calendar), webhook providers, PDF generation
 - **Infrastructure:** Queue processing, caching, comprehensive logging
 
-## 📞 Business Context
-
-Built for a UK removals company to automate their entire sales process. The system handles real business operations including:
-
-- Lead processing from multiple sources
-- Customer relationship management
-- Quote and invoice generation
-- Payment tracking and follow-up
-- Job scheduling and calendar management
 
 ---
 
