@@ -123,7 +123,7 @@ _Real-time business dashboard with key metrics and workflow status_
 
 ### Lead Management
 
-![Customer Leads Table](https://api.quickdigital.co.uk/storage/blog-content/718f6ce0-e05d-4881-a459-a0088bb518e5.png)
+![Customer Leads Table](https://api.quickdigital.co.uk/storage/blog-content/718f6ce0-e05c-4881-a459-a0088bb518e5.png)
 _Advanced lead table with filtering, search, and bulk operations_
 
 ### Order Management
@@ -157,5 +157,3 @@ Built for a UK removals company to automate their entire sales process. The syst
 ---
 
 > **Note:** This repository contains sanitized code examples and documentation from a production business system. Sensitive business logic, API keys, and customer data have been removed while preserving technical architecture and implementation patterns.
-
-**Built with Laravel & Filament** • **Contact me to discuss how this experience applies to your business needs**
